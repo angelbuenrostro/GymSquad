@@ -12,9 +12,12 @@
 		A24029882241E3EA00465AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24029862241E3EA00465AEE /* Main.storyboard */; };
 		A240298A2241E3EB00465AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24029892241E3EB00465AEE /* Assets.xcassets */; };
 		A240298D2241E3EB00465AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A240298B2241E3EB00465AEE /* LaunchScreen.storyboard */; };
+		A24029952241E7B900465AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A24029942241E7B900465AEE /* GoogleService-Info.plist */; };
+		F0544D6E8D4D4EE2AFCD5C46 /* Pods_GymSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1ABD9FB7BC5EAB25B1BF1E /* Pods_GymSquad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymSquad.debug.xcconfig"; path = "Target Support Files/Pods-GymSquad/Pods-GymSquad.debug.xcconfig"; sourceTree = "<group>"; };
 		A240297F2241E3EA00465AEE /* GymSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24029822241E3EA00465AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24029842241E3EA00465AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,9 @@
 		A24029892241E3EB00465AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A240298C2241E3EB00465AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A240298E2241E3EB00465AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A24029942241E7B900465AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE1ABD9FB7BC5EAB25B1BF1E /* Pods_GymSquad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymSquad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA87B42A76AD90D700AD64C3 /* Pods-GymSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymSquad.release.xcconfig"; path = "Target Support Files/Pods-GymSquad/Pods-GymSquad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0544D6E8D4D4EE2AFCD5C46 /* Pods_GymSquad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52A5EA2DD6BD866310D8F5C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */,
+				EA87B42A76AD90D700AD64C3 /* Pods-GymSquad.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		A24029762241E3EA00465AEE = {
 			isa = PBXGroup;
 			children = (
 				A24029812241E3EA00465AEE /* GymSquad */,
 				A24029802241E3EA00465AEE /* Products */,
+				52A5EA2DD6BD866310D8F5C9 /* Pods */,
+				B8AB0652106F851961E45D6C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +79,17 @@
 				A24029892241E3EB00465AEE /* Assets.xcassets */,
 				A240298B2241E3EB00465AEE /* LaunchScreen.storyboard */,
 				A240298E2241E3EB00465AEE /* Info.plist */,
+				A24029942241E7B900465AEE /* GoogleService-Info.plist */,
 			);
 			path = GymSquad;
+			sourceTree = "<group>";
+		};
+		B8AB0652106F851961E45D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE1ABD9FB7BC5EAB25B1BF1E /* Pods_GymSquad.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A24029912241E3EB00465AEE /* Build configuration list for PBXNativeTarget "GymSquad" */;
 			buildPhases = (
+				8FEA9269C05258620E2F2AC2 /* [CP] Check Pods Manifest.lock */,
 				A240297B2241E3EA00465AEE /* Sources */,
 				A240297C2241E3EA00465AEE /* Frameworks */,
 				A240297D2241E3EA00465AEE /* Resources */,
+				D6EE57628B59C2E37D69475C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +153,74 @@
 			buildActionMask = 2147483647;
 			files = (
 				A240298D2241E3EB00465AEE /* LaunchScreen.storyboard in Resources */,
+				A24029952241E7B900465AEE /* GoogleService-Info.plist in Resources */,
 				A240298A2241E3EB00465AEE /* Assets.xcassets in Resources */,
 				A24029882241E3EA00465AEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FEA9269C05258620E2F2AC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GymSquad-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6EE57628B59C2E37D69475C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GymSquad/Pods-GymSquad-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GymSquad/Pods-GymSquad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A240297B2241E3EA00465AEE /* Sources */ = {
@@ -280,6 +372,7 @@
 		};
 		A24029922241E3EB00465AEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +391,7 @@
 		};
 		A24029932241E3EB00465AEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA87B42A76AD90D700AD64C3 /* Pods-GymSquad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
