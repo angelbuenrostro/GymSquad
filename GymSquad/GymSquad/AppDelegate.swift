@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseFirestore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        // START default_firestore
         FirebaseApp.configure()
+        
+        let db = Firestore.firestore()
+        // END default_firestore
+        
+        //TEST DOWNLOAD
+//        db.collection("users").whereField("userName", isEqualTo: "Angel").getDocuments { (snapshot, error) in
+//            if error != nil {
+//                print(error!)
+//            } else {
+//                for document in (snapshot?.documents)! {
+//
+//                    if let userName = document.data()["userName"] as? String {
+//                        print(userName)
+//                    }
+//                }
+//            }
+//        }
+        
+        
+        print(db) // silence warning
         
         return true
     }

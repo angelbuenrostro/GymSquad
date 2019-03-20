@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A21ECAA92242735E00A8695A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAA82242735E00A8695A /* User.swift */; };
+		A21ECAAB2242736E00A8695A /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAAA2242736E00A8695A /* Workout.swift */; };
+		A21ECAAD2242737A00A8695A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAAC2242737A00A8695A /* Exercise.swift */; };
 		A24029832241E3EA00465AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24029822241E3EA00465AEE /* AppDelegate.swift */; };
 		A24029882241E3EA00465AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24029862241E3EA00465AEE /* Main.storyboard */; };
 		A240298A2241E3EB00465AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24029892241E3EB00465AEE /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymSquad.debug.xcconfig"; path = "Target Support Files/Pods-GymSquad/Pods-GymSquad.debug.xcconfig"; sourceTree = "<group>"; };
+		A21ECAA82242735E00A8695A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A21ECAAA2242736E00A8695A /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		A21ECAAC2242737A00A8695A /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		A240297F2241E3EA00465AEE /* GymSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24029822241E3EA00465AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A24029872241E3EA00465AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		A21ECAA72242733400A8695A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A21ECAA82242735E00A8695A /* User.swift */,
+				A21ECAAA2242736E00A8695A /* Workout.swift */,
+				A21ECAAC2242737A00A8695A /* Exercise.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A24029762241E3EA00465AEE = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 		A24029812241E3EA00465AEE /* GymSquad */ = {
 			isa = PBXGroup;
 			children = (
+				A21ECAA72242733400A8695A /* Models */,
 				A24029822241E3EA00465AEE /* AppDelegate.swift */,
 				A24029862241E3EA00465AEE /* Main.storyboard */,
 				A24029962241FE7100465AEE /* MainCollectionViewController.swift */,
@@ -226,8 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A21ECAAD2242737A00A8695A /* Exercise.swift in Sources */,
 				A24029832241E3EA00465AEE /* AppDelegate.swift in Sources */,
 				A24029972241FE7100465AEE /* MainCollectionViewController.swift in Sources */,
+				A21ECAA92242735E00A8695A /* User.swift in Sources */,
+				A21ECAAB2242736E00A8695A /* Workout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
