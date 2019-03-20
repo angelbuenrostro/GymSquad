@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		A24029832241E3EA00465AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24029822241E3EA00465AEE /* AppDelegate.swift */; };
-		A24029852241E3EA00465AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24029842241E3EA00465AEE /* ViewController.swift */; };
 		A24029882241E3EA00465AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A24029862241E3EA00465AEE /* Main.storyboard */; };
 		A240298A2241E3EB00465AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A24029892241E3EB00465AEE /* Assets.xcassets */; };
 		A240298D2241E3EB00465AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A240298B2241E3EB00465AEE /* LaunchScreen.storyboard */; };
 		A24029952241E7B900465AEE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A24029942241E7B900465AEE /* GoogleService-Info.plist */; };
+		A24029972241FE7100465AEE /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A24029962241FE7100465AEE /* MainCollectionViewController.swift */; };
 		F0544D6E8D4D4EE2AFCD5C46 /* Pods_GymSquad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1ABD9FB7BC5EAB25B1BF1E /* Pods_GymSquad.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,12 +20,12 @@
 		8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymSquad.debug.xcconfig"; path = "Target Support Files/Pods-GymSquad/Pods-GymSquad.debug.xcconfig"; sourceTree = "<group>"; };
 		A240297F2241E3EA00465AEE /* GymSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GymSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A24029822241E3EA00465AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A24029842241E3EA00465AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A24029872241E3EA00465AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A24029892241E3EB00465AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A240298C2241E3EB00465AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A240298E2241E3EB00465AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A24029942241E7B900465AEE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A24029962241FE7100465AEE /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
 		CE1ABD9FB7BC5EAB25B1BF1E /* Pods_GymSquad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymSquad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA87B42A76AD90D700AD64C3 /* Pods-GymSquad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymSquad.release.xcconfig"; path = "Target Support Files/Pods-GymSquad/Pods-GymSquad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +48,6 @@
 				8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */,
 				EA87B42A76AD90D700AD64C3 /* Pods-GymSquad.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,8 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				A24029822241E3EA00465AEE /* AppDelegate.swift */,
-				A24029842241E3EA00465AEE /* ViewController.swift */,
 				A24029862241E3EA00465AEE /* Main.storyboard */,
+				A24029962241FE7100465AEE /* MainCollectionViewController.swift */,
 				A24029892241E3EB00465AEE /* Assets.xcassets */,
 				A240298B2241E3EB00465AEE /* LaunchScreen.storyboard */,
 				A240298E2241E3EB00465AEE /* Info.plist */,
@@ -227,8 +226,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A24029852241E3EA00465AEE /* ViewController.swift in Sources */,
 				A24029832241E3EA00465AEE /* AppDelegate.swift in Sources */,
+				A24029972241FE7100465AEE /* MainCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
