@@ -7,14 +7,19 @@
 //
 
 import UIKit
+import FirebaseFirestore
 
 private let reuseIdentifier = "WorkoutCell"
 
 class MainCollectionViewController: UICollectionViewController {
     
-
+    var db: Firestore!
+    
+    var userArray: [User] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        db = Firestore.firestore()
         
         
         

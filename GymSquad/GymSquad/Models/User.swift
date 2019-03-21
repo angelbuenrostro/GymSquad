@@ -9,13 +9,35 @@
 import Foundation
 import FirebaseFirestore
 
+protocol DocumentSerializable {
+    init?(dictionary:[String:Any])
+}
+
 struct User {
     var userName: String
+    let creationDate: Date
+    
+    var dictionary: [String:Any] {
+        return[
+            "userName":userName,
+            "creationDate":creationDate
+        ]
+    }
+}
+
+extension User: DocumentSerializable {
+    init?(dictionary: [String:Any]) {
+        guard let userName = dictionary["name"] as? String,
+            let creationDate = dictionary["creationDate"] as? Date else { return nil }
+        
+        self.init(userName: userName, creationDate: creationDate)
+    }
 }
 
 struct Name {
     var firstName: String
     var lastName: String
+    
 }
 
 struct Stats {
