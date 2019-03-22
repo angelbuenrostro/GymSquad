@@ -110,6 +110,8 @@ class TimerViewController: UIViewController {
                 currentTimerLabel.text = "00:00:\(counter)"
             } else {
             setLabel.text = "Done!"
+            exerciseCounter = 0
+            counter = 10
             currentTimerLabel.text = "Good Workout!"
             timer.invalidate()
 //            currentTimerLabel.backgroundColor = UIColor.red

@@ -287,7 +287,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Vc-wT-KqX">
-                                <rect key="frame" x="165.66666666666666" y="666" width="83" height="102"/>
+                                <rect key="frame" x="165.66666666666666" y="715" width="83" height="102"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guW-mZ-E5U">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="47"/>
@@ -311,6 +311,17 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JMW-16-qBL">
+                                <rect key="frame" x="0.0" y="58" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="PGJ-8Y-I17"/>
+                                    <constraint firstAttribute="width" constant="45" id="f8r-kW-3WS"/>
+                                </constraints>
+                                <state key="normal" image="icons8-Back Filled_32"/>
+                                <connections>
+                                    <segue destination="ZFx-fM-ipB" kind="show" animates="NO" id="TNo-EI-1lf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
@@ -318,7 +329,9 @@
                             <constraint firstItem="B4g-1G-sQc" firstAttribute="top" secondItem="Pek-WF-yBJ" secondAttribute="bottom" constant="75" id="3Pr-Wo-yQE"/>
                             <constraint firstItem="4Vc-wT-KqX" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="CC8-pj-zYD"/>
                             <constraint firstItem="Pek-WF-yBJ" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="IEN-1V-N5J"/>
+                            <constraint firstItem="JMW-16-qBL" firstAttribute="top" secondItem="uSa-Vm-n1h" secondAttribute="top" constant="14" id="NML-iK-YqE"/>
                             <constraint firstItem="B4g-1G-sQc" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="heU-mR-1yL"/>
+                            <constraint firstItem="JMW-16-qBL" firstAttribute="leading" secondItem="uSa-Vm-n1h" secondAttribute="leading" id="hwR-fZ-VuF"/>
                             <constraint firstItem="Pek-WF-yBJ" firstAttribute="top" secondItem="uSa-Vm-n1h" secondAttribute="top" constant="14" id="oKq-2s-Dl8"/>
                             <constraint firstItem="nDS-6O-Fad" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="twC-S3-IQx"/>
                             <constraint firstItem="uSa-Vm-n1h" firstAttribute="bottom" secondItem="4Vc-wT-KqX" secondAttribute="bottom" constant="45" id="uo8-rS-KyL"/>
@@ -807,7 +820,6 @@
         <image name="icons8-Back Filled_32" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Cnb-in-v1l"/>
-        <segue reference="M4A-L9-Ngm"/>
+        <segue reference="TNo-EI-1lf"/>
     </inferredMetricsTieBreakers>
 </document>
