@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 import FirebaseFirestore
 
 protocol DocumentSerializable {
@@ -27,7 +28,7 @@ struct User {
 
 extension User: DocumentSerializable {
     init?(dictionary: [String:Any]) {
-        guard let userName = dictionary["name"] as? String,
+        guard let userName = dictionary["userName"] as? String,
             let creationDate = dictionary["creationDate"] as? Date else { return nil }
         
         self.init(userName: userName, creationDate: creationDate)

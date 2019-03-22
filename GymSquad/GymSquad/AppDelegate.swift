@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FirebaseAuth
 import FirebaseFirestore
 
   let primaryColor = UIColor(red: 210/255, green: 109/255, blue: 180/255, alpha: 1)
@@ -46,6 +47,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            }
 //        }
         
+//        let authListener = Auth.auth().addStateDidChangeListener { (auth, user) in
+//
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//
+//            if user != nil {
+//                let controller = storyboard.instantiateViewController(withIdentifier: "MainNavigationController") as! UINavigationController
+//                self.window?.rootViewController = controller
+//                self.window?.makeKeyAndVisible()
+//            } else {
+//                let controller = storyboard.instantiateViewController(withIdentifier: "MenuViewController") as! MenuViewController
+//                self.window?.rootViewController = controller
+//                self.window?.makeKeyAndVisible()            }
+//        }
         
         print(db) // silence warning
         

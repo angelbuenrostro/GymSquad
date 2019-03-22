@@ -146,12 +146,15 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkj-hv-zB9">
-                                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="44" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="44" id="O7Q-cc-Vv0"/>
                                                     <constraint firstAttribute="width" secondItem="mkj-hv-zB9" secondAttribute="height" multiplier="1:1" id="q51-92-v2N"/>
                                                 </constraints>
                                                 <state key="normal" image="icons8-Back Filled_32"/>
+                                                <connections>
+                                                    <action selector="handleDismissButton:" destination="eT6-TC-qCb" eventType="touchUpInside" id="vGJ-fT-dV2"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -159,7 +162,7 @@
                                             <constraint firstAttribute="trailing" secondItem="0uk-in-aEs" secondAttribute="trailing" constant="36" id="ENa-9O-HNh"/>
                                             <constraint firstItem="0uk-in-aEs" firstAttribute="top" secondItem="WFW-1n-gvZ" secondAttribute="top" constant="64" id="H7b-H4-9fs"/>
                                             <constraint firstItem="0uk-in-aEs" firstAttribute="leading" secondItem="WFW-1n-gvZ" secondAttribute="leading" constant="36" id="R9j-0c-VJV"/>
-                                            <constraint firstItem="mkj-hv-zB9" firstAttribute="top" secondItem="WFW-1n-gvZ" secondAttribute="top" constant="20" id="VwQ-rr-3Sx"/>
+                                            <constraint firstItem="mkj-hv-zB9" firstAttribute="top" secondItem="WFW-1n-gvZ" secondAttribute="topMargin" id="VwQ-rr-3Sx"/>
                                             <constraint firstItem="mkj-hv-zB9" firstAttribute="leading" secondItem="WFW-1n-gvZ" secondAttribute="leading" id="W64-JG-OGU"/>
                                         </constraints>
                                     </view>
@@ -183,6 +186,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YX9-Vf-9y1"/>
                     </view>
+                    <connections>
+                        <outlet property="dismissButton" destination="mkj-hv-zB9" id="RTJ-BF-oLM"/>
+                        <outlet property="emailField" destination="7oU-kg-t9D" id="2F5-d3-4qe"/>
+                        <outlet property="passwordField" destination="ttd-J0-JFN" id="GhL-K4-SfN"/>
+                        <outlet property="usernameField" destination="eUk-lB-fLc" id="G2Z-s9-SUD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YKu-iy-Msv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,7 +236,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8A-q4-Sc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2385" y="134"/>
+            <point key="canvasLocation" x="2382" y="113"/>
         </scene>
         <!--Add Workout View Controller-->
         <scene sceneID="xf0-8p-bEG">
@@ -301,7 +310,7 @@
         <!--Menu View Controller-->
         <scene sceneID="Sgu-In-EXf">
             <objects>
-                <viewController id="MbX-wa-PEj" customClass="MenuViewController" customModule="GymSquad" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuViewController" id="MbX-wa-PEj" customClass="MenuViewController" customModule="GymSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XgK-TI-NtD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -344,10 +353,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="khY-6p-M07"/>
                     </view>
+                    <connections>
+                        <segue destination="59E-b8-cUN" kind="show" identifier="showMainScreen" animates="NO" id="vtn-ll-ELm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WjO-XZ-tyI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="113"/>
+            <point key="canvasLocation" x="44" y="113"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="UiR-FB-2hQ">
@@ -367,7 +379,7 @@
                                                 <rect key="frame" x="36" y="64" width="303" height="350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8u-af-Whk">
-                                                        <rect key="frame" x="122" y="8" width="59" height="24.5"/>
+                                                        <rect key="frame" x="122" y="8" width="59" height="25.5"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -444,7 +456,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CO-hg-NJt">
-                                                <rect key="frame" x="0.0" y="20" width="44" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="44" height="44"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="7CO-hg-NJt" secondAttribute="height" multiplier="1:1" id="1Wg-YD-56g"/>
                                                     <constraint firstAttribute="height" constant="44" id="plY-nD-5DJ"/>
@@ -461,7 +473,7 @@
                                             <constraint firstItem="7CO-hg-NJt" firstAttribute="leading" secondItem="RA9-ns-buY" secondAttribute="leading" id="4da-hO-3TP"/>
                                             <constraint firstAttribute="trailing" secondItem="7av-zM-wyv" secondAttribute="trailing" constant="36" id="4jz-HW-OJY"/>
                                             <constraint firstItem="7av-zM-wyv" firstAttribute="top" secondItem="RA9-ns-buY" secondAttribute="top" constant="64" id="OQi-Ze-VC1"/>
-                                            <constraint firstItem="7CO-hg-NJt" firstAttribute="top" secondItem="RA9-ns-buY" secondAttribute="top" constant="20" id="ZLt-Kk-EYj"/>
+                                            <constraint firstItem="7CO-hg-NJt" firstAttribute="top" secondItem="RA9-ns-buY" secondAttribute="topMargin" id="ZLt-Kk-EYj"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -501,7 +513,7 @@
         <!--Navigation Controller-->
         <scene sceneID="057-Rn-92N">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="59E-b8-cUN" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MainNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="59E-b8-cUN" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uyO-ga-wjl">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
@@ -514,7 +526,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDT-M8-CS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="134"/>
+            <point key="canvasLocation" x="1614" y="113"/>
         </scene>
     </scenes>
     <resources>

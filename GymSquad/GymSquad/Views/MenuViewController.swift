@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class MenuViewController: UIViewController {
 
@@ -15,6 +17,12 @@ class MenuViewController: UIViewController {
 
         // Add the background gradient
         view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if let user = Auth.auth().currentUser {
+            self.performSegue(withIdentifier: "showMainScreen", sender: self)
+        }
     }
     
 

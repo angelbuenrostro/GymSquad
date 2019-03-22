@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Firebase
+import FirebaseAuth
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
@@ -146,6 +147,28 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         continueButton.setTitle("", for: .normal)
         activityView.startAnimating()
         
+        if Auth.auth().isSignIn(withEmailLink: email) {
+        Auth.auth().signIn(withEmail: email, link: pass) { (user, error) in
+            if error == nil && user != nil {
+                self.dismiss(animated: false, completion: nil)
+            } else {
+                print("Error logging in: \(error!.localizedDescription)")
+                
+                self.resetForm()
+            }
+        }
+        } else {
+            self.resetForm()
+        }
+    }
+    func resetForm() {
         
+        let alert = UIAlertController(title: "Login attempt failed!", message: nil, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Return", style: .default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+        setContinueButton(enabled: true)
+        
+        continueButton.setTitle("Continue", for: .normal)
+        activityView.stopAnimating()
     }
 }
