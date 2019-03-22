@@ -14,16 +14,49 @@ private let reuseIdentifier = "WorkoutCell"
 class MainCollectionViewController: UICollectionViewController {
     
     var db: Firestore!
-    
+    var user: User?
+    var exercises: [Exercise] = []
+    var exerciseNames: [String]?
     var userArray: [User] = []
+    var workoutName: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        collectionView.backgroundView?.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        
+        
+        workoutButton.isEnabled = false
         db = Firestore.firestore()
+        if let workoutName = workoutName{
+            workoutButton.setTitle(workoutName, for: .normal)
+            workoutButton.isEnabled = true
+            let workoutRef = self.db.collection("workouts").document(workoutName)
         
-        
-        
-
+        workoutRef.getDocument { (document, error) in
+            if let workout = document.flatMap({
+                $0.data().flatMap({ (data) in
+                    return Workout(dictionary: data)
+                })
+            }) {
+                let exerciseArray = workout.exercises
+                for entry in exerciseArray{
+                if let exercise = exerciseArray[entry.key] as? [String: Any] {
+                    self.exercises.append(Exercise(dictionary: exercise)!)
+                }
+                }
+                print("Exercise array: \(self.exercises)")
+//                exerciseDictionary.flatMap({
+//                    var newExercise = Exercise(dictionary: [$0.key:$0.value])
+//                    self.exercises.append(newExercise!)
+//                    print(newExercise)
+//                })
+                print("Workout: \(workout)")
+            } else {
+                print("Document does not exist!")
+            }
+        }
+        }
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -33,32 +66,44 @@ class MainCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using [segue destinationViewController].
         // Pass the selected object to the new view controller.
+        
+        
+        if segue.identifier == "showWorkoutTimer"{
+            let destinationVC = segue.destination as! TimerViewController
+            destinationVC.workoutName = self.workoutName
+            destinationVC.exercises = self.exercises
+        }
     }
-    */
+  
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let kWhateverHeightYouWant = 150
+        return CGSize(width: collectionView.bounds.size.width, height: CGFloat(kWhateverHeightYouWant))
     }
 
+    override func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return 1
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
+        
         // Configure the cell
     
         return cell
@@ -95,4 +140,8 @@ class MainCollectionViewController: UICollectionViewController {
     }
     */
 
+    @IBOutlet weak var workoutButton: RoundedWhiteButton!
+    @IBAction func workoutButtonTapped(_ sender: Any) {
+        self.performSegue(withIdentifier: "showWorkoutTimer", sender: self)
+    }
 }

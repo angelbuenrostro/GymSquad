@@ -36,19 +36,19 @@
                                                 <rect key="frame" x="36" y="64" width="342" height="350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9q-On-NPP">
-                                                        <rect key="frame" x="133.66666666666666" y="8.0000000000000018" width="75" height="25.666666666666671"/>
+                                                        <rect key="frame" x="133.66666666666666" y="8.0000000000000018" width="75" height="24.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USERNAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxo-5R-MTw">
-                                                        <rect key="frame" x="12" y="57.666666666666671" width="310" height="21"/>
+                                                        <rect key="frame" x="12" y="56.666666666666671" width="310" height="21"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eUk-lB-fLc" userLabel="Username Field">
-                                                        <rect key="frame" x="12" y="90.666666666666657" width="318" height="30"/>
+                                                        <rect key="frame" x="12" y="89.666666666666657" width="318" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="91B-tV-pPN"/>
                                                         </constraints>
@@ -57,20 +57,20 @@
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="next" textContentType="name"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbP-qt-OSF">
-                                                        <rect key="frame" x="12" y="124.66666666666666" width="318" height="1"/>
+                                                        <rect key="frame" x="12" y="123.66666666666666" width="318" height="1"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="uqN-RW-l79"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzc-Ts-Ad0">
-                                                        <rect key="frame" x="14" y="147.66666666666666" width="308" height="21"/>
+                                                        <rect key="frame" x="14" y="146.66666666666666" width="308" height="21"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7oU-kg-t9D" userLabel="Email Field">
-                                                        <rect key="frame" x="12" y="180.66666666666666" width="318" height="30"/>
+                                                        <rect key="frame" x="12" y="179.66666666666666" width="318" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="0ok-u2-aCr"/>
                                                         </constraints>
@@ -79,20 +79,20 @@
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" textContentType="email"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MMy-rg-mUx">
-                                                        <rect key="frame" x="12" y="214.66666666666669" width="318" height="1"/>
+                                                        <rect key="frame" x="12" y="213.66666666666669" width="318" height="1"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Zoc-YH-gjf"/>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XO8-mN-JhY">
-                                                        <rect key="frame" x="14" y="237.66666666666669" width="314" height="22"/>
+                                                        <rect key="frame" x="14" y="236.66666666666669" width="314" height="21"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="18"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ttd-J0-JFN" userLabel="Password Field">
-                                                        <rect key="frame" x="12" y="267.66666666666669" width="318" height="30"/>
+                                                        <rect key="frame" x="12" y="265.66666666666669" width="318" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="jGN-5P-gnS"/>
                                                         </constraints>
@@ -101,7 +101,7 @@
                                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" secureTextEntry="YES" textContentType="password"/>
                                                     </textField>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z2o-SR-DoB">
-                                                        <rect key="frame" x="12" y="301.66666666666669" width="318" height="1"/>
+                                                        <rect key="frame" x="12" y="299.66666666666669" width="318" height="1"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="1" id="Bdo-qz-Esp"/>
@@ -206,24 +206,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eE0-C1-QHW">
-                            <size key="itemSize" width="50" height="50"/>
+                            <size key="itemSize" width="414" height="309"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WorkoutCell" id="JkP-jJ-QBv">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </view>
-                                <connections>
-                                    <segue destination="EnV-qo-i55" kind="show" animates="NO" id="XDj-OJ-oNC"/>
-                                </connections>
-                            </collectionViewCell>
-                        </cells>
+                        <view key="backgroundView" contentMode="scaleToFill" id="sNb-gr-uwG">
+                            <rect key="frame" x="0.0" y="-44" width="414" height="896"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKA-iE-V8c">
+                                    <rect key="frame" x="37" y="420" width="341" height="57"/>
+                                    <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="32"/>
+                                    <state key="normal" title="ADD A WORKOUT">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="workoutButtonTapped:" destination="ZFx-fM-ipB" eventType="touchUpInside" id="hVN-Qd-Iik"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="rKA-iE-V8c" firstAttribute="centerX" secondItem="sNb-gr-uwG" secondAttribute="centerX" id="Au5-If-J2h"/>
+                                <constraint firstItem="rKA-iE-V8c" firstAttribute="centerY" secondItem="sNb-gr-uwG" secondAttribute="centerY" id="EQC-Ea-Fsl"/>
+                            </constraints>
+                        </view>
+                        <cells/>
                         <connections>
                             <outlet property="dataSource" destination="ZFx-fM-ipB" id="Eoh-ZB-UHd"/>
                             <outlet property="delegate" destination="ZFx-fM-ipB" id="gBv-Zi-PXy"/>
@@ -236,58 +245,96 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="workoutButton" destination="rKA-iE-V8c" id="Kqz-pU-NcV"/>
+                        <segue destination="EnV-qo-i55" kind="show" identifier="showWorkoutTimer" animates="NO" id="tk8-Q5-ccj"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E8A-q4-Sc5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2382" y="113"/>
+            <point key="canvasLocation" x="2381.1594202898555" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Timer View Controller-->
         <scene sceneID="tht-qe-i8v">
             <objects>
-                <viewController id="EnV-qo-i55" sceneMemberID="viewController">
+                <viewController id="EnV-qo-i55" customClass="TimerViewController" customModule="GymSquad" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LNg-0e-95D">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Workout Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-WF-yBJ">
-                                <rect key="frame" x="150" y="118" width="114" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-WF-yBJ">
+                                <rect key="frame" x="103.66666666666669" y="58" width="207" height="36"/>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Exercise Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4g-1G-sQc">
-                                <rect key="frame" x="150" y="178" width="114" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4g-1G-sQc">
+                                <rect key="frame" x="120.33333333333333" y="169" width="173.66666666666669" height="30.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAl-CU-Igx">
-                                <rect key="frame" x="171" y="238" width="67" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rAl-CU-Igx">
+                                <rect key="frame" x="51.333333333333343" y="251.33333333333337" width="311.66666666666663" height="86"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="73"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5u-dz-azR">
-                                <rect key="frame" x="171" y="677" width="67" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set #" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDS-6O-Fad">
+                                <rect key="frame" x="183" y="215.66666666666666" width="48" height="23.666666666666657"/>
+                                <fontDescription key="fontDescription" name="Gilroy-Medium" family="Gilroy" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTW-Ba-RYE">
-                                <rect key="frame" x="167" y="623" width="78" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Vc-wT-KqX">
+                                <rect key="frame" x="165.66666666666666" y="666" width="83" height="102"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guW-mZ-E5U">
+                                        <rect key="frame" x="0.0" y="0.0" width="83" height="47"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="29"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTapped:" destination="EnV-qo-i55" eventType="touchUpInside" id="KOM-Id-0NG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqr-eB-XL8">
+                                        <rect key="frame" x="0.0" y="55" width="83" height="47"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="29"/>
+                                        <state key="normal" title="STOP">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopTapped:" destination="EnV-qo-i55" eventType="touchUpInside" id="kxS-kV-mYH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rAl-CU-Igx" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="1My-Oj-BvW"/>
+                            <constraint firstItem="B4g-1G-sQc" firstAttribute="top" secondItem="Pek-WF-yBJ" secondAttribute="bottom" constant="75" id="3Pr-Wo-yQE"/>
+                            <constraint firstItem="4Vc-wT-KqX" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="CC8-pj-zYD"/>
+                            <constraint firstItem="Pek-WF-yBJ" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="IEN-1V-N5J"/>
+                            <constraint firstItem="B4g-1G-sQc" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="heU-mR-1yL"/>
+                            <constraint firstItem="Pek-WF-yBJ" firstAttribute="top" secondItem="uSa-Vm-n1h" secondAttribute="top" constant="14" id="oKq-2s-Dl8"/>
+                            <constraint firstItem="nDS-6O-Fad" firstAttribute="centerX" secondItem="LNg-0e-95D" secondAttribute="centerX" id="twC-S3-IQx"/>
+                            <constraint firstItem="uSa-Vm-n1h" firstAttribute="bottom" secondItem="4Vc-wT-KqX" secondAttribute="bottom" constant="45" id="uo8-rS-KyL"/>
+                            <constraint firstItem="rAl-CU-Igx" firstAttribute="top" secondItem="nDS-6O-Fad" secondAttribute="bottom" constant="12" id="xpW-tk-Lli"/>
+                            <constraint firstItem="nDS-6O-Fad" firstAttribute="top" secondItem="B4g-1G-sQc" secondAttribute="bottom" constant="16" id="yGu-lK-PAk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uSa-Vm-n1h"/>
                     </view>
+                    <connections>
+                        <outlet property="currentTimerLabel" destination="rAl-CU-Igx" id="cID-19-etU"/>
+                        <outlet property="exerciseNameLabel" destination="B4g-1G-sQc" id="rEL-Tc-UWs"/>
+                        <outlet property="setLabel" destination="nDS-6O-Fad" id="8K0-wO-kyT"/>
+                        <outlet property="startButton" destination="guW-mZ-E5U" id="G6g-bv-1L8"/>
+                        <outlet property="stopButton" destination="Jqr-eB-XL8" id="djL-eC-7L2"/>
+                        <outlet property="workoutNameLabel" destination="Pek-WF-yBJ" id="4cj-F5-gj1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LMM-9C-Av1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -306,16 +353,16 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eUS-0Q-VLO">
-                                    <rect key="frame" x="12" y="55" width="390" height="169"/>
+                                    <rect key="frame" x="12" y="55" width="390" height="167"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXERCISE  NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtK-eF-XBN">
-                                            <rect key="frame" x="0.0" y="0.0" width="390" height="25.333333333333332"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="24.666666666666668"/>
                                             <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vo3-DI-KkO" userLabel="Exercise Name Text Field">
-                                            <rect key="frame" x="0.0" y="25.333333333333329" width="390" height="30"/>
+                                            <rect key="frame" x="0.0" y="24.666666666666671" width="390" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="4s2-l2-itl"/>
                                             </constraints>
@@ -324,20 +371,20 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="wfv-bq-cGF">
-                                            <rect key="frame" x="0.0" y="55.333333333333329" width="390" height="1"/>
+                                            <rect key="frame" x="0.0" y="54.666666666666671" width="390" height="1"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="uMU-f0-poA"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SETS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="he9-zH-6ZN">
-                                            <rect key="frame" x="0.0" y="56.333333333333336" width="390" height="25.333333333333336"/>
+                                            <rect key="frame" x="0.0" y="55.666666666666664" width="390" height="24.666666666666664"/>
                                             <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ubt-Oc-9Yz" userLabel="Sets Text Field">
-                                            <rect key="frame" x="0.0" y="81.666666666666657" width="390" height="30"/>
+                                            <rect key="frame" x="0.0" y="80.333333333333343" width="390" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="Fp1-qo-tHn"/>
                                             </constraints>
@@ -346,20 +393,20 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="w4G-T3-vyS">
-                                            <rect key="frame" x="0.0" y="111.66666666666666" width="390" height="1"/>
+                                            <rect key="frame" x="0.0" y="110.33333333333334" width="390" height="1"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="Mrr-aj-ee7"/>
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REPS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Bo-Uy-fCV">
-                                            <rect key="frame" x="0.0" y="112.66666666666666" width="390" height="25.333333333333343"/>
+                                            <rect key="frame" x="0.0" y="111.33333333333334" width="390" height="24.666666666666657"/>
                                             <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fcv-02-dKC" userLabel="Reps Text Field">
-                                            <rect key="frame" x="0.0" y="138" width="390" height="30"/>
+                                            <rect key="frame" x="0.0" y="136" width="390" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="WH5-k6-ddG"/>
                                             </constraints>
@@ -368,7 +415,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="Rmn-fs-aSZ">
-                                            <rect key="frame" x="0.0" y="168" width="390" height="1"/>
+                                            <rect key="frame" x="0.0" y="166" width="390" height="1"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="RHI-9t-xcC"/>
@@ -377,10 +424,10 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ayt-GA-3C3">
-                                    <rect key="frame" x="132" y="368.33333333333331" width="150" height="34"/>
+                                    <rect key="frame" x="132" y="365.66666666666669" width="150" height="33"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCT-Xq-f0G" customClass="RoundedWhiteButton" customModule="GymSquad" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="150" height="34"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="33"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="150" id="oyB-ZP-I7i"/>
@@ -399,16 +446,16 @@
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gXf-c0-6it">
-                                    <rect key="frame" x="97.666666666666686" y="284" width="219" height="72.333333333333314"/>
+                                    <rect key="frame" x="97.666666666666686" y="282" width="219" height="71.666666666666686"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORKOUT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTj-cc-LTp">
-                                            <rect key="frame" x="0.0" y="0.0" width="219" height="25.333333333333332"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="219" height="24.666666666666668"/>
                                             <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lmC-kT-MaH" userLabel="Workout Name Text Field">
-                                            <rect key="frame" x="0.0" y="33.333333333333314" width="219" height="30"/>
+                                            <rect key="frame" x="0.0" y="32.666666666666686" width="219" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="YsN-aF-KP1"/>
                                             </constraints>
@@ -417,7 +464,7 @@
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPv-6Q-bKk">
-                                            <rect key="frame" x="0.0" y="71.333333333333314" width="219" height="1"/>
+                                            <rect key="frame" x="0.0" y="70.666666666666686" width="219" height="1"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="xIW-hH-Chz"/>
@@ -437,7 +484,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nw7-im-Wf4" customClass="RoundedWhiteButton" customModule="GymSquad" customModuleProvider="target">
-                                    <rect key="frame" x="132" y="232" width="150" height="34"/>
+                                    <rect key="frame" x="132" y="230" width="150" height="33"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="150" id="Xr7-Re-lGR"/>
@@ -500,6 +547,7 @@
                         <outlet property="repsCountTextField" destination="fcv-02-dKC" id="3Z6-W0-zud"/>
                         <outlet property="setsCountTextField" destination="Ubt-Oc-9Yz" id="v4y-cf-T4o"/>
                         <outlet property="workoutNameTextField" destination="lmC-kT-MaH" id="pB9-AS-efA"/>
+                        <segue destination="ZFx-fM-ipB" kind="show" identifier="workoutSavedSegue" animates="NO" id="M4A-L9-Ngm"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6N-Z5-OkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -605,7 +653,7 @@
                                                 <rect key="frame" x="36" y="64" width="342" height="350"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8u-af-Whk">
-                                                        <rect key="frame" x="141.66666666666666" y="8.0000000000000018" width="59" height="25.666666666666671"/>
+                                                        <rect key="frame" x="141.66666666666666" y="8.0000000000000018" width="59" height="24.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy" pointSize="21"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -758,4 +806,8 @@
     <resources>
         <image name="icons8-Back Filled_32" width="100" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Cnb-in-v1l"/>
+        <segue reference="M4A-L9-Ngm"/>
+    </inferredMetricsTieBreakers>
 </document>

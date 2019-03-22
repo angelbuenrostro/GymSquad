@@ -15,6 +15,7 @@ class AddWorkoutTableViewController: UITableViewController {
     var db: Firestore!
     var exercises: [Exercise] = []
     var exerciseNames: [String] = []
+    var workoutName: String?
 
 
     override func viewDidLoad() {
@@ -83,15 +84,21 @@ class AddWorkoutTableViewController: UITableViewController {
     }
     */
 
-    /*
+   
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        let destinationVC = segue.destination as! MainCollectionViewController
+        
+        if segue.identifier == "workoutSavedSegue"{
+            destinationVC.workoutName = workoutName
+        }
     }
-    */
+    
+    
     func updateViews(){
         DispatchQueue.main.async{
             self.tableView.reloadData()
@@ -141,7 +148,9 @@ class AddWorkoutTableViewController: UITableViewController {
                 print("Error saving workout:\(error.localizedDescription)")
             } else {
                 print("Workout saved!")
-                self.dismiss(animated: true, completion: nil)
+                self.workoutName = workoutName
+//                self.dismiss(animated: true, completion: nil)
+                self.performSegue(withIdentifier: "workoutSavedSegue", sender: self)
             }
         }
     }
