@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A20FF2A72244F0A900610E10 /* AddWorkoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20FF2A62244F0A900610E10 /* AddWorkoutTableViewController.swift */; };
 		A21ECAA92242735E00A8695A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAA82242735E00A8695A /* User.swift */; };
 		A21ECAAB2242736E00A8695A /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAAA2242736E00A8695A /* Workout.swift */; };
 		A21ECAAD2242737A00A8695A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAAC2242737A00A8695A /* Exercise.swift */; };
-		A21ECAAF22431D7900A8695A /* AddWorkoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAAE22431D7800A8695A /* AddWorkoutViewController.swift */; };
 		A21ECAB222433D5B00A8695A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAB122433D5B00A8695A /* LoginViewController.swift */; };
 		A21ECAB522433F5700A8695A /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAB422433F5700A8695A /* InitialViewController.swift */; };
 		A21ECAB72243425C00A8695A /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21ECAB62243425C00A8695A /* MenuViewController.swift */; };
@@ -31,10 +31,10 @@
 
 /* Begin PBXFileReference section */
 		8B633825DBA0A159EEBC2731 /* Pods-GymSquad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GymSquad.debug.xcconfig"; path = "Target Support Files/Pods-GymSquad/Pods-GymSquad.debug.xcconfig"; sourceTree = "<group>"; };
+		A20FF2A62244F0A900610E10 /* AddWorkoutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutTableViewController.swift; sourceTree = "<group>"; };
 		A21ECAA82242735E00A8695A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A21ECAAA2242736E00A8695A /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		A21ECAAC2242737A00A8695A /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
-		A21ECAAE22431D7800A8695A /* AddWorkoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutViewController.swift; sourceTree = "<group>"; };
 		A21ECAB02243268C00A8695A /* GymSquad.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GymSquad.entitlements; sourceTree = "<group>"; };
 		A21ECAB122433D5B00A8695A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A21ECAB422433F5700A8695A /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -96,7 +96,7 @@
 				A21ECAB122433D5B00A8695A /* LoginViewController.swift */,
 				A21ECAB82243429500A8695A /* SignUpViewController.swift */,
 				A24029962241FE7100465AEE /* MainCollectionViewController.swift */,
-				A21ECAAE22431D7800A8695A /* AddWorkoutViewController.swift */,
+				A20FF2A62244F0A900610E10 /* AddWorkoutTableViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -311,10 +311,10 @@
 				A21ECAC122435F3E00A8695A /* HelperExtensions.swift in Sources */,
 				A21ECAAD2242737A00A8695A /* Exercise.swift in Sources */,
 				A24029832241E3EA00465AEE /* AppDelegate.swift in Sources */,
-				A21ECAAF22431D7900A8695A /* AddWorkoutViewController.swift in Sources */,
 				A21ECAC722437AD500A8695A /* RoundedWhiteButton.swift in Sources */,
 				A21ECAB92243429500A8695A /* SignUpViewController.swift in Sources */,
 				A21ECAB72243425C00A8695A /* MenuViewController.swift in Sources */,
+				A20FF2A72244F0A900610E10 /* AddWorkoutTableViewController.swift in Sources */,
 				A24029972241FE7100465AEE /* MainCollectionViewController.swift in Sources */,
 				A21ECAA92242735E00A8695A /* User.swift in Sources */,
 				A21ECAAB2242736E00A8695A /* Workout.swift in Sources */,

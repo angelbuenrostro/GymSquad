@@ -14,7 +14,7 @@ import FirebaseFirestore
 
 struct Workout {
     var name: String
-    var exercises: [Exercise]
+    var exercises:[String: Any] // Going to be the name of the saved exercises
     
     var dictionary: [String:Any] {
         return [
@@ -27,7 +27,7 @@ struct Workout {
 extension Workout: DocumentSerializable {
     init?(dictionary: [String:Any]){
         guard let name = dictionary["name"] as? String,
-            let exercises = dictionary["exercises"] as? [Exercise] else { return nil }
+        let exercises = dictionary["exercises"] as? [String:Any] else { return nil }
         
         self.init(name: name, exercises: exercises)
         
